@@ -16,19 +16,20 @@ if uploaded_file is not None:
 # In[2]:
 
 
-data.head(15)
+st.write(data.head(15))
 
 
 # In[5]:
 
 
-data.shape
+st.write(data.shape)
 
 
 # In[6]:
 
 
 data.isna().sum()
+
 
 
 # In[7]:
