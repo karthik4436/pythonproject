@@ -3,11 +3,15 @@
 
 # In[1]:
 
-
+%%writefile app.py
 import streamlit as st
 import pandas as pd
-data=pd.read_csv(Salary Data.csv)
-data
+
+uploaded_file = st.file_uploader("Salary Data", type="csv")
+if uploaded_file is not None:
+    data = pd.read_csv(uploaded_file)
+    st.write(data.head())
+
 
 
 # In[2]:
