@@ -5,24 +5,21 @@
 
 import streamlit as st
 import pandas as pd
-
-uploaded_file = st.file_uploader("Salary Data", type="csv")
-if uploaded_file is not None:
-    data = pd.read_csv(uploaded_file)
-    st.write(data.head())
+data=pd.read_csv("C:/Users/karth/Downloads/Salary Data.csv")
+data
 
 
 
 # In[2]:
 
 
-st.write(data.head(15))
+data.head(15)
 
 
 # In[5]:
 
 
-st.write(data.shape)
+data.shape
 
 
 # In[6]:
@@ -79,7 +76,7 @@ data.dropna(subset=['Age'], inplace=True)
 # In[3]:
 
 
-
+get_ipython().run_line_magic('matplotlib', 'inline')
 import matplotlib.pyplot as plt
 import seaborn as sns
 
@@ -136,7 +133,7 @@ y = data_encoded['Salary']
 # In[5]:
 
 
-
+get_ipython().run_line_magic('matplotlib', 'inline')
 import pandas as pd
 data=pd.read_csv("C:/Users/karth/Downloads/Salary Data.csv")
 
