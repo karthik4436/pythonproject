@@ -79,7 +79,7 @@ data.dropna(subset=['Age'], inplace=True)
 # In[3]:
 
 
-get_ipython().run_line_magic('matplotlib', 'inline')
+
 import matplotlib.pyplot as plt
 import seaborn as sns
 
