@@ -136,7 +136,7 @@ y = data_encoded['Salary']
 # In[5]:
 
 
-get_ipython().run_line_magic('matplotlib', 'inline')
+
 import pandas as pd
 data=pd.read_csv("C:/Users/karth/Downloads/Salary Data.csv")
 
